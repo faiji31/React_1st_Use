@@ -15,6 +15,8 @@ function App() {
 
         <Person></Person>
          <Games></Games>
+         <Student></Student>
+         <Country></Country>
       
     </>
   )
@@ -34,5 +36,18 @@ function Games(){
      <h1>Playing Games</h1>
   )
 }
+function Student(){
+  const age =25;
+  const dept ="CSE";
+  return(
+    <p>My Name is Faiji AKbar {age} {dept}</p>
+  )
+}
 
+function Country(){
+  const name ="Australia";
+  return(
+    <h1>Bangladesh {name}</h1>
+  )
+}
 export default App
