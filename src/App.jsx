@@ -16,6 +16,8 @@ function App() {
       <Player name1="Shakib" Runs="45"></Player>
       <Player name1="Tamim" Runs="15"></Player>
       <Player name1="Saif" Runs="51"></Player>
+      <Salami event="Eid" Amount="1200"></Salami>
+      <Salami event="JSC" Amount="1700"></Salami>
       
     </>
   )
@@ -36,6 +38,15 @@ function Player(props){
     <div className='student'>
       <p>Name: {props.name1}</p>
       <p>Runs: {props.Runs}</p>
+    </div>
+  )
+}
+
+function Salami({event,Amount}){
+  return(
+    <div className='student'>
+      <p>Salami For: {event}</p>
+      <p>Amount: {Amount} </p>
     </div>
   )
 }
