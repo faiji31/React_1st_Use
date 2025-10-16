@@ -10,44 +10,24 @@ function App() {
     <>
       
       <h1>Vite + React</h1>
-      <Person></Person>
-        <Person></Person>
-
-        <Person></Person>
-         <Games></Games>
-         <Student></Student>
-         <Country></Country>
+      <Student na="liam" dept=" CSE"></Student>
+      <Student na="Aditto" dept="BBA" ></Student>
+      <Student  na="aruf" dept="Marketing"></Student>
+      
       
     </>
   )
 }
 
-function Person(){
-  const age=17;
-  const name = 'faiji';
-  return(
-
-          <p>I am a person {name} {age}</p>
-
-  )
-}
-function Games(){
-  return(
-     <h1>Playing Games</h1>
-  )
-}
-function Student(){
-  const age =25;
-  const dept ="CSE";
-  return(
-    <p>My Name is Faiji AKbar {age} {dept}</p>
-  )
+function Student (props){
+  console.log(props)
+  return (
+    <div className="student">
+      <p>Name: {props.na}</p>
+      <p>Dept: {props.dept}</p>
+    </div>
+  );
 }
 
-function Country(){
-  const name ="Australia";
-  return(
-    <h1>Bangladesh {name}</h1>
-  )
-}
+
 export default App
