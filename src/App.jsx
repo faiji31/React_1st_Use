@@ -13,7 +13,9 @@ function App() {
       <Student na="liam" dept=" CSE"></Student>
       <Student na="Aditto" dept="BBA" ></Student>
       <Student  na="aruf" dept="Marketing"></Student>
-      
+      <Player name1="Shakib" Runs="45"></Player>
+      <Player name1="Tamim" Runs="15"></Player>
+      <Player name1="Saif" Runs="51"></Player>
       
     </>
   )
@@ -28,6 +30,14 @@ function Student (props){
     </div>
   );
 }
-
+function Player(props){
+  console.log(props)
+  return(
+    <div className='student'>
+      <p>Name: {props.name1}</p>
+      <p>Runs: {props.Runs}</p>
+    </div>
+  )
+}
 
 export default App
